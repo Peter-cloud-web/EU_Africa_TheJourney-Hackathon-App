@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.authentication.authFragments.registrationOptions.OptionsFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave"
+        android:rotation="180"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registation Options"
+        android:fontFamily="@font/aclonica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/invoiceRegistration"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/invoice2"
+        android:layout_marginTop="140dp"/>
+
+    <TextView
+        android:id="@+id/txtInvoiceRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invoiceRegistration"
+        android:text="Invoiceholder registration"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/donorRegistration"
+        android:layout_below="@id/txtInvoiceRegistration"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/donor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtDonorRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donorRegistration"
+        android:text="Donor registration"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"/>
+</RelativeLayout>

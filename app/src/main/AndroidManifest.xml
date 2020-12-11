@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InvoHelp">
-        <activity android:name=".ui.splash.splash_screen"></activity>
+        <activity android:name=".ui.authentication.authFragments.registrationOptions.OptionsActivity"></activity>
+        <activity android:name=".ui.borrower.BorrowerActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ui.authentication.AuthActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.splash.splash_screen"
             android:label="@string/app_name"
             android:theme="@style/Theme.InvoHelp.NoActionBar">
             <intent-filter>
