@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:layout_gravity="center_vertical"
-    android:layout_margin="50dp"
+    android:layout_height="match_parent"
     tools:context=".ui.authentication.authFragments.registrationOptions.OptionsFragment">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/invoice2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave"
+        android:rotation="180"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registation Options"
+        android:fontFamily="@font/aclonica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
 
     <ImageView
+        android:id="@+id/invoiceRegistration"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/donor"/>
-</LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/invoice2"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/txtInvoiceRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invoiceRegistration"
+        android:text="Invoiceholder registration"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/donorRegistration"
+        android:layout_below="@id/txtInvoiceRegistration"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/donor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtDonorRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donorRegistration"
+        android:text="Invoiceholder registration"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"/>
+</RelativeLayout>
