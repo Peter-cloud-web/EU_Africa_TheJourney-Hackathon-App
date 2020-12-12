@@ -16,20 +16,9 @@ import com.example.invohelp.R;
 
 public class DonorsHistoryFragment extends Fragment {
 
-    private DonorsHistoryViewModel donorsHistoryViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        donorsHistoryViewModel =
-                new ViewModelProvider(this).get(DonorsHistoryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        donorsHistoryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_donor_history, container, false);
         return root;
     }
 }

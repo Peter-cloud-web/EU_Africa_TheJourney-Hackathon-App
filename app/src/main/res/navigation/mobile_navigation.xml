@@ -9,17 +9,17 @@
         android:id="@+id/invoiceHistory"
         android:name="com.example.invohelp.ui.history.InvoiceHistoryFragment"
         android:label="@string/invoice_history"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_invoice_history" />
 
     <fragment
         android:id="@+id/donorHistory"
         android:name="com.example.invohelp.ui.donors.DonorsHistoryFragment"
         android:label="@string/Donor_History"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_donor_history" />
 
     <fragment
         android:id="@+id/invoiceUpload"
         android:name="com.example.invohelp.ui.invoiceUpload.InvoiceUploadFragment"
         android:label="@string/invoice_Upload"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_upload_invoice" />
 </navigation>

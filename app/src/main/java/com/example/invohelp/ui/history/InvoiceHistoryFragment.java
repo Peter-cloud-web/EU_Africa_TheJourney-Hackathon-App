@@ -16,20 +16,8 @@ import com.example.invohelp.R;
 
 public class InvoiceHistoryFragment extends Fragment {
 
-    private InvoiceHistoryViewModel invoiceHistoryViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        invoiceHistoryViewModel =
-                new ViewModelProvider(this).get(InvoiceHistoryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        invoiceHistoryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_invoice_history, container, false);
+  return root;
     }
 }

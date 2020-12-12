@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.invoiceUpload.InvoiceUploadFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/invoice5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Invoice registration"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/emails"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_edittexts"
+            android:drawablePadding="10dp"
+            android:hint="Invoice Number"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/passwords"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_edittexts"
+            android:drawablePadding="10dp"
+            android:hint="Company Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/black" />
+
+
+        <EditText
+            android:id="@+id/ConfirmPasswords"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape_edittexts"
+            android:drawablePadding="10dp"
+            android:hint="Amount Due"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chooseFile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/choosefile"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/uploadFile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/upload"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="ChooseFile"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Upload File"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_buttons"
+            android:fontFamily="@font/abril_fatface"
+            android:padding="0dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

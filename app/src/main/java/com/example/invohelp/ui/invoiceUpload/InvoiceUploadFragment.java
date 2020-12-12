@@ -1,10 +1,13 @@
 package com.example.invohelp.ui.invoiceUpload;
 
+import android.app.Application;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,22 +17,24 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.invohelp.R;
 
-public class InvoiceUploadFragment extends Fragment {
+public class InvoiceUploadFragment extends Fragment implements View.OnClickListener {
+    Button submit;
 
-    private InvoiceUploadViewModel invoiceUploadViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        invoiceUploadViewModel =
-                new ViewModelProvider(this).get(InvoiceUploadViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        invoiceUploadViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_upload_invoice, container, false);
+        submit = root.findViewById(R.id.submit);
+        submit.setOnClickListener(this);
         return root;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v==submit){
+            showToast();
+        }
+    }
+
+    public void showToast(){
+        Toast.makeText(getActivity(), "Successfully submitted", Toast.LENGTH_SHORT).show();
     }
 }
